@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Cute+Font&display=swap" rel="stylesheet"
+    <meta charset="utf-8">
+    <style media="screen">
+      *{
+        padding: 0;
+        margin: 0;
+      }
+      body{
+        font-family: 'Cute Font', cursive;
+        font-size: 20px;
+        color: #444444;
+      }
+      li{
+        list-style-type: none;
+      }
+      .clear{
+        clear: both;
+      }
+      header{
+        width :1140px;
+        height: 100px;
+        margin: 0 auto;
+          /*border: solid 1px red;*/
+      }
+      #logo{/*로고 */
+        float: left;
+        margin: 20px 0 0 20px;
+          /*border: solid 1px red;*/
+        }
+        #menu{
+          float: right;
+            /*border: solid 1px red;*/
+        }
+        #top_menu{
+          text-align: right;
+          margin-top:20px;
+              /*border: solid 1px red;*/
+        }
+        #main_menu{
+          text-align: 20px;
+          font-family: 'Cute Font', cursive;
+          font-size: 30px;
+          color: black;
+          margin: 20px 20px 0 0;
+        /*border: solid 1px red;*/
+        }
+        #main_menu li{
+          display: inline;
+          margin-left: 80px;
+            float : right;
+        }
+        #main_img{
+          width: 100%;
+          height: 200px;
+          background-image: url('./Snoopy.png');
+          background-repeat: no-repeat;
+          background-position: top center;
+          margin-top: 20px;
+            /*border: solid 1px red;*/
+        }
+        #contents{
+          width: 1140px;
+          /*height: 300px;*/
+          margin: 0 auto;
+            /*border: solid 1px red;*/
+        }
+        #sub_menu{
+          width: 234px;
+          float: left;
+          margin-top: 25px;
+              /*border: solid 1px red;*/
+        }
+          #sub_menu h3{
+            font-size: 18px;
+            color: #444344;
+            padding: 12px;
+          background-color: #F6DAD7;
+          }
+          #sub_menu li{
+            padding: 10px;
+            border-bottom: dotted 1px #cccccc;
+
+          }
+          #main_contents{
+            width : 880px;
+            float: right;
+            margin-top: 25px;
+                /*border: solid 1px red;*/
+          }
+          #main_contens h3{
+            font-size: 22px;
+            padding-bottom: 8px;
+            border-bottom: solid 1px #cccccc;
+          }
+           #main_contens p{
+              margin-top: 30px;
+              line-height: 180%;
+                /*border: solid 1px red;*/
+            }
+            #main_contens #figure{
+                margin-top: 30px;
+                text-align: center;
+                  /*border: solid 1px red;*/
+            }
+            #main_contents li{
+              padding: 5px;
+            }
+            footer{
+              width: 1336;
+              height: 150px;
+              margin-top: 30px;
+         background-color: #F6DAD7;
+
+
+            }
+            #footer_box{
+              width:1140px;
+                height: 150px;
+                margin: 0 auto;
+              /*  border: solid 1px green;*/
+            }
+            #footer_logo{
+              float: left;
+              margin: 50px 0 0 30px;
+                /*border: solid 1px red;*/
+            }
+            #address{
+              float: right;
+              margin: 50px 30px 0 0;
+              color: blak;
+                  /*border: solid 1px red;*/
+            }
+            a {
+              color: black;
+              text-decoration: none;
+            }
+            a:link { color: black; text-decoration: none;}
+            a:visited { color: black; text-decoration: none;}
+            a:hover { color: #ffaaaa; background-color: white; text-decoration: none;}
+    </style>
+
+    <title></title>
+  </head>
+  <body>
+
+    <header>
+      <div id="logo">
+          <a href="./index.html"><img src="./logo.png" height="60px"></a>
+      </div>
+      <nav id='menus'>
+      <!--  <div id="top_menu">-->
+      <ul id='main_menu'>
+    <li><a href="./d.html">전시</a></li>
+    <li><a href="./c.html">흥미로운 이야기</a></li>
+    <li><a href="./b.html">피너츠</a></li>
+    <li><a href="./a.html">작가</a></li>
+      </ul>
+      </nav>
+    </header>
+
+<section id='main_img'>
+</section>
+
+<section id='contents'>
+  <nav id='sub_menu'>
+    <h3><a href="./b.html">만화 '피너츠'</a></h3>
+    <ul>
+        <li><a href="./sub_1.html">등장인물</a></li>
+        <li><a href="./sub_2.html">명언</a></li>
+    </ul>
+  </nav>
+
+  <div id="main_contents">
+    <h3>'피너츠'의 등장인물</h3>
+     <br>
+  <div id="figure">
+    <center>
+    <img src="./sn.png" >Snoopy
+    <img src="./wo.png" >Woodstock
+    <img src="./ch.png" >Charlie Brown
+    <img src="./sa.png" >Sally Brown
+    <img src="./li.png" >Linus van Pelt
+    <img src="./pe.png" >Peppermint Patty
+    <img src="./lu.png" >Lucy van Pelt
+    <center>
+  </div>
+
+  </div>
+</section>
+
+<div class="clear"></div>  <!--float 속성 해제-->
+
+<footer>
+  <div id="footer_box">
+      <div id="footer_logo">
+    <!--<img src="img/logo2.png" width="80">-->
+        </div>
+        <ul id='address'>
+          <li>Topic : Snoopy</li>
+          <li>Cartoonist : Charles Monroe Schulz</li>
+          <li>계원예대 디미디 D반 21961010 권지수</li>
+        </ul>
+  </div>
+</footer>
+
+  </body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Cute+Font&display=swap" rel="stylesheet"
+    <meta charset="utf-8">
+    <style media="screen">
+      *{
+        padding: 0;
+        margin: 0;
+      }
+      body{
+        font-family: 'Cute Font', cursive;
+        font-size: 20px;
+        color: #444444;
+      }
+      li{
+        list-style-type: none;
+      }
+      .clear{
+        clear: both;
+      }
+      header{
+        width :1140px;
+        height: 100px;
+        margin: 0 auto;
+          /*border: solid 1px red;*/
+      }
+      #logo{/*로고 */
+        float: left;
+        margin: 10px 0 0 20px;
+          /*border: solid 1px red;*/
+        }
+        #menus{
+          float: right;
+            /*border: solid 1px red;*/
+        }
+        #top_menu{
+          text-align: right;
+          margin-top:20px;
+              /*border: solid 1px red;*/
+        }
+        #main_menu{
+          text-align : right;
+          font-family: 'Cute Font', cursive;
+          font-size: 30px;
+          color: black;
+          margin: 20px 20px 0 0;
+        /*border: solid 1px red;*/
+      }
+      #main_menu li{
+        display: inline;
+        margin-left: 80px;
+          float : right;
+      }
+        #main_img{
+          width: 100%;
+          height:650px;
+          background-image: url('./main_img.png');
+          background-repeat: no-repeat;
+          background-position: top center;
+          margin-top: 20px;
+            /*border: solid 1px red;*/
+        }
+        #contents{
+          width: 1024px;
+          /*height: 300px;*/
+          margin-top: 40px;
+            /*border: solid 1px red;*/
+        }
+        #sub_menu{
+          width: 234px;
+        /*  float: left;*/
+          margin-top: 25px;
+              /*border: solid 1px red;*/
+        }
+          #sub_menu h3{
+            font-size: 18px;
+            color: #5df0c0;
+            padding: 12px;
+          background-color: #516e7f;
+          }
+          #sub_menu li{
+            padding: 10px;
+            border-bottom: dotted 1px #cccccc;
+
+          }
+          #main_contents{
+            width : 880px;
+            float: right;
+            margin-top: 25px;
+                /*border: solid 1px red;*/
+          }
+          #main_contens h3{
+            font-size: 22px;
+            padding-bottom: 8px;
+            border-bottom: solid 1px #cccccc;
+          }
+           #main_contens p{
+              margin-top: 30px;
+              line-height: 180%;
+                /*border: solid 1px red;*/
+            }
+            #main_contens #figure{
+                margin-top: 30px;
+                text-align: center;
+                  /*border: solid 1px red;*/
+            }
+            #main_contents li{
+              padding: 5px;
+            }
+            footer{
+              width: 100%;
+              height: 150px;
+              margin-top: 30px;
+         background-color: #2c2a29;
+
+
+            }
+            #footer_box{
+              width:1140px;
+                height: 150px;
+                margin: 0 auto;
+              /*  border: solid 1px green;*/
+            }
+            #footer_logo{
+              float: left;
+              margin: 50px 0 0 30px;
+                /*border: solid 1px red;*/
+            }
+            #address{
+              float: right;
+              margin: 50px 30px 0 0;
+              color: blak;
+                  /*border: solid 1px red;*/
+            }
+            a {
+              color: black;
+              text-decoration: none;
+            }
+            @import url("anim3-v.css");
+
+          /* WRAPPER */
+          .wrap-slider {width:400px;height:346px;margin:0 auto;}
+
+          /* SLIDER */
+          .css-slider {background:#000;height:346px;width:400px;margin:50px auto;overflow:visible;position:relative;}
+          .mask {overflow:hidden;height:346px;}
+          .css-slider ul {margin:0;padding:0;position:relative;}
+          .css-slider li {width:400px;height:346px;position:absolute;top:0;list-style:none;}
+          .css-slider li.firstanimation {-moz-animation:cycle 15s linear infinite;-webkit-animation:cycle 15s linear infinite;}
+          .css-slider li.secondanimation {-moz-animation:cycletwo 15s linear infinite;-webkit-animation:cycletwo 15s linear infinite;}
+          .css-slider li.thirdanimation {-moz-animation:cyclethree 15s linear infinite;-webkit-animation:cyclethree 15s linear infinite;}
+
+          /* TOOLTIP */
+          .css-slider .tooltip {background:rgba(0,0,0,0.7);width:100%;height:60px;position:relative;bottom:75px;left:-800px;-moz-transition:all 2s ease-in-out;-webkit-transition:all 2s ease-in-out;}
+          .css-slider .tooltip h1 {color:#fff;font-size:24px;fontweight:300;line-height:60px;padding:0 0 0 20px;}
+          .css-slider li.first:hover .tooltip, .css-slider li.second:hover .tooltip, .css-slider li.third:hover .tooltip, .css-slider li.fourth:hover .tooltip, .css-slider li.fifth:hover .tooltip {left:0px;}
+          .css-slider:hover li, .css-slider:hover .progress-bar {-moz-animation-play-state:paused;-webkit-animation-play-state:paused;}
+
+          /* PROGRESS BAR */
+          .progress-bar {position:relative;top:-5px;width:400px;height:5px;background:#0000;-moz-animation:fullexpand 15s ease-out infinite;-webkit-animation:fullexpand 15s ease-out infinite;}
+
+          /* ANIMATION */
+
+          @-moz-keyframes cycle {
+            0%  { right:0px; }
+            28% { right:0px; opacity:1; z-index:0; }
+            33% { right:400px; opacity:0; z-index:0; }
+            34% { right:-400px; opacity:0; z-index:-1; }
+            94% { right:-400px; opacity:0; z-index:0; }
+            95% { right:-400px; opacity:0; }
+            100%{ right:0px; opacity:1; }
+          }
+          @-moz-keyframes cycletwo {
+            0%  { right:-400px; opacity:0; }
+            28% { right:-400px; opacity:0; }
+            33% { right:0px; opacity:1; }
+            60% { right:0px; opacity:1; }
+            61% { right:0px; opacity:1; z-index:0; }
+            66% { right:800px; opacity:0; z-index:0; }
+            67% { right:-400px; opacity:0; z-index:-1; }
+            100%{ right:-400px; opacity:0; z-index:-1; }
+          }
+          @-moz-keyframes cyclethree {
+            0%  { right:-400px; opacity:0; }
+            61% { right:-400px; opacity:0; }
+            66% { right:0px; opacity:1; }
+            94% { right:0px; opacity:1; }
+            95% { right:0px; opacity:1; z-index:0; }
+            100%{ right:400px; opacity:0; z-index:0; }
+          }
+
+          @-webkit-keyframes cycle {
+            0%  {right:0px; }
+            28% { right:0px; opacity:1; z-index:0; }
+            33% { right:400px; opacity:0; z-index:0; }
+            34% { right:-400px; opacity:0; z-index:-1; }
+            94% { right:-400px; opacity:0; z-index:0; }
+            95% { right:-400px; opacity:0; }
+            100%{ right:0px; opacity:1; }
+          }
+          @-webkit-keyframes cycletwo {
+            0%  { right:-400px; opacity:0; }
+            28% { right:-400px; opacity:0; }
+            33% { right:0px; opacity:1; }
+            60% { right:0px; opacity:1; }
+            61% { right:0px; opacity:1; z-index:0; }
+            66% { right:400px; opacity:0; z-index:0; }
+            67% { right:-400px; opacity:0; z-index:-1; }
+            100%{ right:-400px; opacity:0; z-index:-1; }
+          }
+          @-webkit-keyframes cyclethree {
+            0%  { right:-400px; opacity:0; }
+            61% { right:-400px; opacity:0; }
+            66% { right:0px; opacity:1; }
+            94% { right:0px; opacity:1; }
+            95% { right:0px; opacity:1; z-index:0; }
+            100%{ right:400px; opacity:0; z-index:0; }
+          }
+
+          /* ANIMATION BAR */
+          @-moz-keyframes fullexpand {
+              0%, 33%, 66%, 100% { width:0%; opacity:0; }
+              4%, 39%, 69% { width:0%; opacity:1; }
+             29%, 62%, 96% { width:100%; opacity:1; }
+             30%, 63%, 97% { width:100%; opacity:1; }
+             31%, 64%, 98% { width:100%; opacity:0; }
+          }
+          @-webkit-keyframes fullexpand {
+              0%, 33%, 66%, 100% { width:0%; opacity:0; }
+              4%, 39%, 69% { width:0%; opacity:1; }
+             29%, 62%, 96% { width:100%; opacity:1; }
+             30%, 63%, 97% { width:100%; opacity:1; }
+             31%, 64%, 98% { width:100%; opacity:0; }
+          }
+          a:link { color: black; text-decoration: none;}
+          a:visited { color: black; text-decoration: none;}
+          a:hover { color: #ffaaaa; background-color: white; text-decoration: none;}
+
+    </style>
+
+    <title></title>
+  </head>
+  <body>
+
+<header>
+  <div id="logo">
+      <a href="./index.html"><img src="./logo.png" height="60px"></a>
+  </div>
+  <nav id='menus'>
+  <!--  <div id="top_menu">-->
+
+      <ul id='main_menu'>
+    <li><a href="./d.html">전시</a></li>
+    <li><a href="./c.html">흥미로운 이야기</a></li>
+    <li><a href="./b.html">피너츠</a></li>
+    <li><a href="./a.html">작가</a></li>
+      </ul>
+  </nav>
+</header>
+
+<center>
+<section id='contents'>
+  <nav id='sub_menu'>
+
+    <div class="container">
+    	<div class="wrap-slider">
+        	<div class="css-slider">
+            	<div class="mask">
+    				<ul>
+    					<li class="firstanimation first">
+    						<a href="#"><img src="./p1.jpg"/></a>
+    						<div class="tooltip"></div>
+    					</li>
+    					<li class="secondanimation second">
+    						<a href="#"><img src="./p2.jpg" /></a>
+    						<div class="tooltip"></div>
+    					</li>
+    					<li class="thirdanimation third">
+    						<a href="#"><img src="./p3.jpg" /></a>
+    						<div class="tooltip"></div>
+    					</li>
+    				</ul>
+                </div>
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+</nav>
+<br>
+<br>
+<div id="main_contents">
+  <h3>Charles Monroe Schulz</h3>
+  <p>(1922년 11월 26일 ~ 2000년 2월 12일)<br>《피너츠》 시리즈로 유명한 미국의 만화가이다. 슐츠는 미네소타주 미니애폴리스에서 태어나 세인트폴에서 자랐으며,<br> 제2차 세계 대전에 참전했다. 군복무 당시 슐츠는 강아지가 다칠까봐서 포격을 하지 않을 정도로 마음이 여리고 순수한 군인이었다.
+1950년 10월 2일부터 대장암으로 별세한 다음 날인 2000년 2월 13일까지 일간지에 《피너츠》를 문하생을 두지 않고 스스로 작품을 그려서 연재하였다.<br> 《피너츠》 연재당시 스누피 강아지를 빼자는 의견이 있었으나 작가의 고집으로 계속 실릴 수 있었다.
+</p>
+    <br>
+    <br>
+
+</div>
+
+</div>
+
+</section>
+
+<center>
+
+
+<div class="clear"></div>  <!--float 속성 해제-->
+
+
+</html>
